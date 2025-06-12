@@ -2,7 +2,7 @@ public class tUf_better {
     public static int getSingleElement(int []arr) {
         //size of the array:
         int n = arr.length;
-
+        
         // Find the maximum element:
         int maxi = arr[0];
         for (int i = 0; i < n; i++) {
