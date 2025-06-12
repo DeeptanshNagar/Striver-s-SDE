@@ -12,8 +12,9 @@ public class bruteforce_2 {
                     s += a[K];
                 }
 
-                if (s == k)
+                if (s == k) {
                     len = Math.max(len, j - i + 1);
+                }
             }
         }
         return len;
