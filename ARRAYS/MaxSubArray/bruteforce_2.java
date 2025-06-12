@@ -1,9 +1,4 @@
-
-
-
-import java.util.*;
-
-public class tUf {
+public class bruteforce_2 {
     public static int getLongestSubarray(int []a, long k) {
         int n = a.length; // size of the array.
 
