@@ -11,7 +11,7 @@ public class brute {
         int maxlen = 0;
 
         for (int i = 0; i < n; i++) {
-            int sum = 0;
+            long sum = 0;
             for (int j = i; j < n; j++) {
                 sum += arr[j];
                 if (sum == k) {
