@@ -1,5 +1,4 @@
 
-
 public class tUf_better {
     public static int getSingleElement(int []arr) {
         //size of the array:
