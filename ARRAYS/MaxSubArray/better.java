@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class better {
     public static void main(String[] args) {
-        int[] arr = {2,0,0,3}; // note - applicable for ZEROS and NEGATIVES.
+        int[] arr = {5,4,-1,7,8};                                // this is applicable for ZEROS and NEGATIVES.
         int k = 3;
         int len = getLongestSubarray(arr, k);
         System.out.println("The length of the longest subarray is: " + len);
@@ -23,7 +23,7 @@ public class better {
                 int len = i - preSumMap.get(remaining);
                 maxlen = Math.max(maxlen, len);
             }
-            if(!preSumMap.containsKey(sum)){                      // because of this condition.
+            if(!preSumMap.containsKey(sum)){               // because of this condition.
                 preSumMap.put(sum, i);
             }
         }
