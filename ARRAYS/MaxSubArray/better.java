@@ -23,7 +23,7 @@ public class better {
                 int len = i - preSumMap.get(remaining);
                 maxlen = Math.max(maxlen, len);
             }
-            if(!preSumMap.containsKey(sum)){               // because of this condition.
+            if(!preSumMap.containsKey(sum)){                 // because of this condition.
                 preSumMap.put(sum, i);
             }
         }
