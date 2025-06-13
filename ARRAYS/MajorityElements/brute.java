@@ -14,7 +14,7 @@ public class brute {
                 if(nums[j] == nums[i]){
                     count++;
                 }
-            } 
+            }
             if (count > c) {
                 return nums[i];
             }

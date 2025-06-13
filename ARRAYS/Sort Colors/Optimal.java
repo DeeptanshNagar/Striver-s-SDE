@@ -1,5 +1,6 @@
+// Dutch National Flag Algorithm
 
-public class Main {
+public class Optimal {
     public static void main(String args[]) {
         int[] arr = {0, 2, 1, 2, 0, 1};
         int n = arr.length;
