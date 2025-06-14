@@ -1,4 +1,4 @@
-public class brute2 {
+public class Better {
     public static int maxSubarraySum(int[] nums, int n) {
         int maxi = Integer.MIN_VALUE; // maximum sum
 
