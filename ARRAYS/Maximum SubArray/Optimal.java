@@ -44,7 +44,7 @@ public class Optimal {
     }
 }
 
-// // Kadane's Algorithm (lil wrong version) 
+// // Kadane's Algorithm (lil wrong version)
 
 // public class better {
 //     public static void main(String[] args) {
