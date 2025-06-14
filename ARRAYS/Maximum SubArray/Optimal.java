@@ -1,6 +1,7 @@
 public class Optimal {
     public static void main(String[] args) {
         int[] arr = {-2, -3, 4, -1, -2, 1, 5, -3};
+        // int[] arr = {-4,-3,-2,-7,-1};
         int result = maxSubArray(arr);
         System.out.println(result); 
     }
@@ -14,25 +15,16 @@ public class Optimal {
             if (sum < 0) {
                 sum = 0;
             }
+
+            // for some questions only eitherwise ignore
+            // if(maxi<0) {
+            //     maxi = 0;
+            // }
+            
         }
         return maxi;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // // Kadane's Algorithm
 
