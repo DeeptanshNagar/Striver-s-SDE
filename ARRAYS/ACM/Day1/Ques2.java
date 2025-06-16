@@ -1,4 +1,3 @@
-package Day1;
 // DAY 1 <-----/---> QUE 2
 
 // 2. Missing and Repeated

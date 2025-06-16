@@ -1,4 +1,3 @@
-package Day1;
 // DAY 1 <-----/---> QUE 3
 
 public class Ques3 {

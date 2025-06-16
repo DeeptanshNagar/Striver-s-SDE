@@ -1,4 +1,3 @@
-package Day1;
 // DAY 1 <-----/---> QUE 1
 
 import java.util.Arrays;
