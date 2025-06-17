@@ -15,7 +15,7 @@ public class better {
             int value = mpp.getOrDefault(nums[i], 0);
             mpp.put(nums[i], value + 1);
         }
-        for(Map.Entry<Integer, Integer> it : mpp.entrySet()){
+        for(Map.Entry<Integer, Integer> it : mpp.entrySet()){  // 2 : 4 or 1 : 3
             if(it.getValue() > n/2) {
                 return it.getKey();
             }

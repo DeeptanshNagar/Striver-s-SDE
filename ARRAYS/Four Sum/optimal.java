@@ -30,7 +30,10 @@ public class optimal {
                 int k = j+1;
                 int m = n-1;
                 while(k < m) {
-                    int sum = nums[i] + nums[j] + nums[k] + nums[m];
+                    long sum = nums[i];
+                    sum += nums[j];
+                    sum += nums[k];
+                    sum += nums[m];
                     if(sum < target) {
                         k++;
                     } else if (sum > target ) {
