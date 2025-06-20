@@ -12,7 +12,7 @@ public class brute {
             int count = 1;
             while(linearSearch(arr, x+1) == true) {  // x+1 is our target
                 x = x+1;
-                count++;
+                count = count + 1;
             }
             longest = Math.max(longest, count);
         }

@@ -16,7 +16,7 @@ public class better {
         int longest = 1;
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] - 1 == prevSmall) {
-                count++;
+                count = count + 1;
                 prevSmall = arr[i];
             } else if (arr[i] != prevSmall) {
                 count = 1;
