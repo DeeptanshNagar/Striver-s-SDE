@@ -4,7 +4,7 @@ public class optimized {
     public static void main(String[] args) {
         int[] arr = {102,4,100,1,101,3,2,1,1}; // [1, 2, 3, 4, 100, 101, 102]
         int ans = findLongestSeq(arr);
-        System.out.println(ans);
+        System.out.println("Longest Consecutive Sequence: " + ans);
     }
 
     static int findLongestSeq(int[] arr) {
@@ -28,3 +28,6 @@ public class optimized {
         return longest;
     }    
 }
+
+// Time Complexity -> O(N) + O(N + N) = O(3N) // 7 + (4 + 3) 7 = length // 4 longest subseq // 3 will be the second longest subseq
+// Space CompleXity -> O(N)
