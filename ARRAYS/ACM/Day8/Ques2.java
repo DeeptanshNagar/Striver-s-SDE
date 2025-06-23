@@ -9,7 +9,7 @@ public class Ques2 {
         System.out.println(ans);
     }
 
-    static int checkCount(String s, char c) {
+    public static int checkCount(String s, char c) {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == c) {
