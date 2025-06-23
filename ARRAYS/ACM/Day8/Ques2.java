@@ -1,3 +1,6 @@
+// DAY 8 <-----/---> QUE 2
+
+
 public class Ques2 {
     public static void main(String[] args) {
         String str = "JavaScript";

@@ -1,3 +1,6 @@
+// DAY 8 <-----/---> QUE 1
+
+
 import java.util.*;
 
 public class Ques1 {
