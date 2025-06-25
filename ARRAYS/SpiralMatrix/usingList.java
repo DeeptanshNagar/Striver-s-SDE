@@ -52,3 +52,6 @@ public class usingList {
         return ans;
     }
 }
+
+
+// TC = O(N*M)

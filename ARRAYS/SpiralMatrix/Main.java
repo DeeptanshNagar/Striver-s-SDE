@@ -15,6 +15,7 @@ public class Main {
 
         System.out.println();
     }
+    // TC = O(N*M)
     public static int[] printSpiral(int[][] mat) {
         int n = mat.length;        // number of rows
         int m = mat[0].length;     // number of columns

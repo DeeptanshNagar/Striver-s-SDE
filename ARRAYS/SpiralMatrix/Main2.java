@@ -11,7 +11,7 @@ public class Main2 {
         int[] result = spiralMatrix(matrix);
         System.out.println(Arrays.toString(result));
     }
-
+    // TC = O(N*M)
     static int[] spiralMatrix(int[][] matrix) {
         int n = matrix.length;        // row
         int m = matrix[0].length;     // cols
