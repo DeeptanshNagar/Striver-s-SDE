@@ -1,4 +1,25 @@
 public class optimized {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 1, 1, 1},
+            {1, 0, 1, 1},
+            {1, 1, 0, 1},
+            {0, 1, 1, 1}
+        };
+
+        int n = matrix.length;
+        int m = matrix[0].length;
+
+        int[][] ans = zeroMatrix(matrix, n, m);
+
+        System.out.println("The Final matrix is: ");
+        for (int[] row : ans) {
+            for (int ele : row) {
+                System.out.print(ele + " ");
+            }
+            System.out.println();
+        }
+    }
     static int[][] zeroMatrix(int[][] matrix, int n, int m) {
         int col0 = 1;
 
@@ -38,27 +59,5 @@ public class optimized {
         }
 
         return matrix;
-    }
-
-    public static void main(String[] args) {
-        int[][] matrix = {
-            {1, 1, 1, 1},
-            {1, 0, 1, 1},
-            {1, 1, 0, 1},
-            {0, 1, 1, 1}
-        };
-
-        int n = matrix.length;
-        int m = matrix[0].length;
-
-        int[][] ans = zeroMatrix(matrix, n, m);
-
-        System.out.println("The Final matrix is: ");
-        for (int[] row : ans) {
-            for (int ele : row) {
-                System.out.print(ele + " ");
-            }
-            System.out.println();
-        }
     }
 }
