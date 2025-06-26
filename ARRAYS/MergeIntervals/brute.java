@@ -14,15 +14,15 @@ public class brute {
         // Temporary array to store merged intervals (max n)
 
         int[][] temp = new int[n][2]; // n = 4, so temp = new int[4][2]
-        // [ [1, 3], [0, 0], [0, 0], [0, 0] ]
+        // [ [0, 0], [0, 0], [0, 0], [0, 0] ]
 
-        int index = -1; // 0
+        int index = -1; 
 
         for (int i = 0; i < n; i++) {
-            int start = intervals[i][0]; // 2 
-            int end = intervals[i][1];   // 6
+            int start = intervals[i][0]; 
+            int end = intervals[i][1]; 
 
-            if (index == -1 || start > temp[index][1]) {   // 2 > 3
+            if (index == -1 || start > temp[index][1]) {  
                 // No overlap, add new interval
                 index++;
                 temp[index][0] = start; 
