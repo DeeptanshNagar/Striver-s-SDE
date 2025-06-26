@@ -49,7 +49,7 @@ public class brute {
 
         System.out.println("The merged intervals are:");
         for (int i = 0; i < merged.length; i++) {
-            System.out.println("[" + merged[i][0] + ", " + merged[i][1] + "]");
+            System.out.print("[" + merged[i][0] + ", " + merged[i][1] + "]");
         }
     }
 }
