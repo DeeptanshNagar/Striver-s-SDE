@@ -1,4 +1,4 @@
-public class lowerBound {
+public class optimal {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 3, 5, 8, 8, 10, 10, 11};
         int n = nums.length;
@@ -12,7 +12,7 @@ public class lowerBound {
         int end = size - 1;
         while(start <= end) {
             int mid = start + (end - start) / 2;
-            if(nums[mid] >= target) {
+            if(nums[mid] > target) {
                 ans = mid;
                 end = mid - 1;
             } else {
