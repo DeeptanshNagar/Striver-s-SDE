@@ -13,7 +13,7 @@ class Node {
     }
 }
 
-public class revLL {  
+public class reverseLL {  
     public static Node reverseLinkedList(Node head) {
         Node prev = null;   
         Node curr = head;   
