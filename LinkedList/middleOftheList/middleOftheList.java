@@ -1,3 +1,4 @@
+package middleOftheList;
 class Node {
     int value;
     Node next;
