@@ -13,7 +13,7 @@ class Node {
     }
 }
 
-public class brute {
+public class brute { 
     public static void printLL(Node head) {
         while (head != null) {
             System.out.print(head.data + " ");
