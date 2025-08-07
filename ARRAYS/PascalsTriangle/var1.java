@@ -17,6 +17,7 @@ public class var1 {
             res = res * (n - i);
             res = res / (i + 1);
         }
+        
         return res;
     }
 }
