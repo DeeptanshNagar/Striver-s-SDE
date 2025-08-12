@@ -20,7 +20,7 @@ public class Optimal {
             if(sum == 0) {
                 Start = i;
             }
-            sum += arr[i];
+            sum += arr[i]; // -2
             if(sum>maxi){
                 maxi = sum;
                 ansStart = Start; ansEnd = i;
