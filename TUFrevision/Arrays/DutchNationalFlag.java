@@ -24,8 +24,22 @@ public class DutchNationalFlag {
         int mid = 0;
         int high = n - 1;
 
-        while(n > 0) {
-            
+        while(mid <= high) {
+            if(arr[mid] == 0) {
+                swap(arr, mid, low);
+                low++;
+                mid++;
+            } else if (arr[mid] == 1) {
+                mid++;
+            } else {
+                swap(arr, mid, high);
+                high--;
+            }
         }
+    }
+    static void swap(int[] arr, int first, int second) {
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
     }
 }
