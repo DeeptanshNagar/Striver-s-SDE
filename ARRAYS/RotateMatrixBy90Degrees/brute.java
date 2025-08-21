@@ -36,3 +36,6 @@ public class brute {
         return matrix;
     }
 }
+
+// tc = o(n^2)
+// sc = o(n^2)
