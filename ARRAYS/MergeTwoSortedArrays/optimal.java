@@ -2,7 +2,10 @@ import java.util.Arrays;
 
 public class optimal {
     public static void main(String[] args) {
-        int[] arr1 = {4,5,6,0,0,0};
+        // int[] arr1 = {1,2,3,0,0,0};
+        // int[] arr2 = {4,5,6};
+
+        int[] arr1 = {4,5,6,0,0,0}; // [4, 5, 6, 4, 5, 6]
         int[] arr2 = {1,2,3};
         int n = arr1.length;
         int m = arr2.length;
