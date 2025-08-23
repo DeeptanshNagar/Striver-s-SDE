@@ -8,12 +8,32 @@ public class search2Dmatrix {
         };
         int n = matrix.length;
         int m = matrix[0].length;
-        boolean result = searchMatrix(matrix, n, m);
+        int target = 23;
+        boolean result = searchMatrix(matrix, n, m, target);
         System.out.println(result);
     }
 
-    static boolean searchMatrix(int[][] matrix, int n, int m) {
-        
+    static boolean searchMatrix(int[][] matrix, int n, int m, int target) {
+        for (int row = 0; row < n; row++) {
+            if(matrix[row][0] <= target && target <= matrix[row][m - 1]) {
+                return binarySearch(matrix[row], target);
+            }
+        }
         return false;
-    } 
+    }
+    static boolean binarySearch(int[] row, int target) {
+        int start = 0;
+        int end = row.length - 1;
+        while(start <= end) {
+            int mid = start + (end - start) / 2;
+            if(target > row[mid]) {
+                start = mid + 1;
+            } else if (target < row[mid]) {
+                end = mid - 1;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
 }
