@@ -2,22 +2,21 @@ import java.util.Arrays;
 
 public class optimalRepeatNmissing {
     public static void main(String[] args) {
-        int[] a = {3, 1, 2, 5, 4, 6, 7, 5};
-        int[] ans = findMissingRepeatingNumbers(a);
+        int[] arr = {3, 1, 2, 5, 4, 6, 7, 5};
+        int[] ans = findMissingRepeatingNumbers(arr);
         System.out.println(Arrays.toString(ans));
     }
 
-    static int[] findMissingRepeatingNumbers(int[] a) {
-        long n = a.length; // size of the array
-        // Find Sn and S2n:
+    static int[] findMissingRepeatingNumbers(int[] arr) {
+        long n = arr.length; 
         long SN = (n * (n + 1)) / 2;
         long S2N = (n * (n + 1) * (2 * n + 1)) / 6;
 
         // Calculate S and S2:
         long S = 0, S2 = 0;
         for (int i = 0; i < n; i++) {
-            S += a[i];
-            S2 += (long)a[i] * (long)a[i];
+            S += arr[i];
+            S2 += (long)arr[i] * (long)arr[i];
         }
 
         //S-Sn = X-Y:
