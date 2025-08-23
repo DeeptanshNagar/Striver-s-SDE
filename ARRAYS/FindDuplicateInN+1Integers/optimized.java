@@ -1,9 +1,10 @@
 public class optimized {
     public static void main(String args[]) {
         int arr[] = {1,3,4,2,3};
-        System.out.println("The duplicate element is " + findDuplicate(arr));
+        System.out.println(findDuplicate(arr));
     }
-    public static int findDuplicate(int[] nums) {
+
+    static int findDuplicate(int[] nums) {
         int slow = nums[0];
         int fast = nums[0];
         do {
