@@ -14,7 +14,7 @@ public class NextPermutations{
         while(i >= 0 && arr[i] >= arr[i + 1]) {
             i--;
         }
-
+    
         if(i >= 0) {
             int j = n - 1;
             while(arr[j] <= arr[i]) {
@@ -33,6 +33,7 @@ public class NextPermutations{
             end--;
         }
     }
+
     static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
