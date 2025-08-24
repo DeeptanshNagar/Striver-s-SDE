@@ -1,4 +1,4 @@
-public class Main {
+public class powx {
     public static void main(String[] args) {
         System.out.println(Solution.myPow(2.0, 10));     // 1024.0
         System.out.println(Solution.myPow(2.0, -2));       // 0.25
