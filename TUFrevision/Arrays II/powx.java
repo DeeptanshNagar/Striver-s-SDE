@@ -1,6 +1,6 @@
 public class powx {
     public static void main(String[] args) {
-        System.out.println(myPow(3.0, 5));
+        System.out.println(myPow(3.0, -5));
     }
     static double myPow(double x, int n) {
         if (n == 0) return 1.0;
