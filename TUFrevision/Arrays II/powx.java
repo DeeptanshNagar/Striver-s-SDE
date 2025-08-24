@@ -1,15 +1,8 @@
 public class powx {
     public static void main(String[] args) {
-        System.out.println(Solution.myPow(2.0, 10));     // 1024.0
-        System.out.println(Solution.myPow(2.0, -2));       // 0.25
-        System.out.println(Solution.myPow(-2.0, 3));       // -8.0
-        System.out.println(Solution.myPow(0.0, 5));      // 0.0
-        System.out.println(Solution.myPow(0.0, 0));      // 1.0
+        System.out.println(myPow(3.0, 5));
     }
-}
-
-class Solution {
-    public static double myPow(double x, int n) {
+    static double myPow(double x, int n) {
         if (n == 0) return 1.0;
         if (x == 0) return 0.0;
         if (x == 1) return 1.0;
@@ -33,3 +26,5 @@ class Solution {
         return ans;
     }
 }
+
+// Instead of multiplying x n times (O(n)), we reduce time to O(log n).
