@@ -30,3 +30,6 @@ public class LongestSubArrBetter {
         return maxLen;
     }
 }
+
+// tc = o(n x log N)
+// SC = O(n)
