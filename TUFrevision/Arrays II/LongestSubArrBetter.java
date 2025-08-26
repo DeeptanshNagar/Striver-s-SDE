@@ -14,9 +14,9 @@ public class LongestSubArrBetter {
         long sum = 0;
         HashMap<Long, Integer> preSumMap = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+            sum = sum + arr[i]; // 3
             if(sum == k) {
-                maxLen = Math.max(maxLen, i + 1);
+                maxLen = Math.max(maxLen, i + 1); // 2 len
             }
             long remaining = sum - k;
             if(preSumMap.containsKey(remaining)) {
