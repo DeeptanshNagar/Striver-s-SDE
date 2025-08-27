@@ -1,26 +1,24 @@
 import java.util.HashMap;
-import java.util.Map;
 
 public class better {
     public static void main(String[] args) {
-        int[] nums = {2,2,1,1,1,2,2};
-        int ans = majorityElement(nums);
-        System.out.println(ans);
+        int[] nums = {2, 2, 1, 1, 1, 2, 2};
+        int result = findMajority(nums);
+        System.out.println(result);
     }
 
-    static int majorityElement(int[] nums) {
-        int n = nums.length;
-        HashMap<Integer, Integer> mpp = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int value = mpp.getOrDefault(nums[i], 0);
-            mpp.put(nums[i], value + 1);
-        }
-        for(Map.Entry<Integer, Integer> it : mpp.entrySet()){  // 2 : 4 or 1 : 3
-            if(it.getValue() > n/2) {
-                return it.getKey();
+    static int findMajority(int[] nums) {
+        HashMap<Integer, Integer> count = new HashMap<>();
+        int halfLength = nums.length / 2;
+        
+        // Count each number and check immediately
+        for (int num : nums) {
+            count.put(num, count.getOrDefault(num, 0) + 1);
+            if (count.get(num) > halfLength) {
+                return num;
             }
         }
-        return -1;
+        
+        return -1; 
     }
 }
-
