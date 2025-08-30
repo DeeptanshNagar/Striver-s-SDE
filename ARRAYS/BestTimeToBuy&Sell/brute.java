@@ -15,4 +15,5 @@ public class brute {
         }
         return maxProfit;
     }
+
 }
