@@ -48,7 +48,7 @@ public class optimal {
         }
         System.out.println(head.num);
     }
-
+   
     public static void main(String args[]) {
         Node head = null;
         head = insertNode(head, 1);
