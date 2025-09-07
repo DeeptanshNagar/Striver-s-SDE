@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Node {
     int num;
     Node next;
@@ -10,7 +8,7 @@ class Node {
     }
 }
 
-class TUF {
+class optimized {
 
     // Utility function to insert node at the end of the linked list
     static Node insertNode(Node head, int val) {
@@ -44,7 +42,7 @@ class TUF {
             }
         }
 
-        // if negative -> list2 longer, else list1 longer
+        // if negative -> list2 longer, else list1 longer otherwise if zero then bohot are equal
         return len1 - len2;
     }
 
@@ -81,27 +79,29 @@ class TUF {
     }
 
     public static void main(String args[]) {
-        // Creation of first list
         Node head = null;
-        head = insertNode(head, 1);
-        head = insertNode(head, 3);
-        head = insertNode(head, 1);
-        head = insertNode(head, 2);
-        head = insertNode(head, 4);
+        head = insertNode(head, 1); // 1 -> NULL
+        head = insertNode(head, 3); // 1 -> 3 -> NULL
+        head = insertNode(head, 1); // 1 -> 3 -> 1 -> NULL
+        head = insertNode(head, 2); // 1 -> 3 -> 1 -> 2 -> NULL
+        head = insertNode(head, 4); // 1 -> 3 -> 1 -> 2 -> 4 -> NULL
+
         Node head1 = head;
+        // head = head1 = 1 -> 3 -> 1 -> 2 -> 4 -> NULL
 
-        // Move pointer forward to create intersection
         head = head.next.next.next;
+        // head = 2 -> 4 -> NULL
 
-        // Creation of second list
+
         Node headSec = null;
-        headSec = insertNode(headSec, 3);
-        Node head2 = headSec;
+        headSec = insertNode(headSec, 3); // headSec = 3 -> NULL
+        Node head2 = headSec; // head2 = headSec = 3 -> NULL
 
         // Create intersection
-        headSec.next = head;
+        headSec.next = head; // head2 = headSec = 3 -> 2 -> 4 -> NULL
 
-        // Printing the lists
+
+        
         System.out.print("List1: ");
         printList(head1);
 
