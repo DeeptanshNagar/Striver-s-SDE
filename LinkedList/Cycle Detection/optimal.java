@@ -1,34 +1,32 @@
-import java.util.HashMap;
-
 class Node {
-    int data;
-    Node next;
+    public int data;   
+    public Node next;  
 
-    Node(int data, Node next) {
+    public Node(int data, Node next) {
         this.data = data;
         this.next = next;
     }
 
-    Node(int data) {
+    public Node(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
-public class brute {
-    public static boolean detectLoop(Node head) {
-        Node temp = head;
-        HashMap<Node, Boolean> nodeMap = new HashMap<>();
-
-        while (temp != null) {
-            if (nodeMap.containsKey(temp)) {
-                return true;
+public class optimal {
+    public static boolean detectCycle(Node head) {
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return true; 
             }
-            nodeMap.put(temp, true);
-            temp = temp.next;
         }
         return false;
     }
+
 
     public static void main(String[] args) {
         Node head = new Node(1);
@@ -43,7 +41,7 @@ public class brute {
         fourth.next = fifth;
         fifth.next = third;
 
-        if (detectLoop(head)) {
+        if (detectCycle(head)) {
             System.out.println("Loop detected in the linked list.");
         } else {
             System.out.println("No loop detected in the linked list.");
