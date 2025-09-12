@@ -35,7 +35,7 @@ public class brute2 {
                 System.out.print(temp.data + " ");
                 temp = temp.next;
         }
-        will result in an infinite loop ⏳ because:
+        will result in an infinite loop because:
 
         Normally, the traversal ends when temp becomes null.
 
