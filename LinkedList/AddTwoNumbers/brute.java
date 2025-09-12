@@ -11,6 +11,7 @@ class Node {
         this.next = null;
     }
 }
+
 public class brute {
     public Node addTwoNumbers(Node l1, Node l2) {
         Node dummy = new Node(-1);
@@ -57,3 +58,4 @@ public class brute {
         // printLL(addLL);
     }
 }
+
