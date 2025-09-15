@@ -1,10 +1,26 @@
 class brute {
-    static public String result(String s) {
+    public static void main(String[] args) {
+        String st = "TUF is great for interview preparation";
+        System.out.println("Before reversing words: ");
+        System.out.println(st);
+        System.out.println("After reversing words: ");
+        System.out.print(result(st));
+    }
+
+    static String result(String s) {
         int left = 0;
         int right = s.length() - 1;
 
         String temp = "";  // current word
         String ans = "";   // final result
+
+        while(left <= right && s.charAt(left) == ' ') {
+            left++;
+        }
+
+        while(left <= right && s.charAt(right) == ' ') {
+            right--;
+        }
 
         while (left <= right) {
             char ch = s.charAt(left);
@@ -28,15 +44,6 @@ class brute {
                 ans = temp;
             }
         }
-
         return ans;
-    }
-
-    public static void main(String[] args) {
-        String st = "TUF is great for interview preparation";
-        System.out.println("Before reversing words: ");
-        System.out.println(st);
-        System.out.println("After reversing words: ");
-        System.out.print(result(st));
     }
 }
