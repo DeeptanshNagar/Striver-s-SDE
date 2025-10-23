@@ -32,10 +32,39 @@ class Queue {
         } else {
             end = (end + 1) % maxSize;
         }
-        
+
         arr[end] = newElement;
         System.out.println("Pushed Element: " + newElement);
         currSize++;
+    }
+
+    public int pop() {
+        if(start == -1) {
+            System.out.println("Queue Empty\nExiting...");
+            System.exit(1);
+        }
+
+        int popped = arr[start];
+        if(currSize == 1) {
+            start = -1;
+            end = -1;
+        } else {
+            start = (start + 1) % maxSize;
+        }
+        currSize--;
+        return popped;
+    }
+
+    public int top() {
+        if (start == -1) {
+            System.out.println("Queue is Empty");
+            System.exit(1);
+        }
+        return arr[start];
+    }
+    
+    public int size() {
+        return currSize;
     }
 }
 
