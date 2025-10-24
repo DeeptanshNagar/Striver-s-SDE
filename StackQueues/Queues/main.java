@@ -71,6 +71,15 @@ class Queue {
 
 public class main {
     public static void main(String[] args) {
-        
+        Queue q = new Queue(6);
+        q.push(4);
+        q.push(14);
+        q.push(24);
+        q.push(34);
+        System.out.println(q.top());
+        System.out.println(q.size());
+        System.out.println(q.pop());
+        System.out.println(q.top());
+        System.out.println(q.size());
     }
 }
