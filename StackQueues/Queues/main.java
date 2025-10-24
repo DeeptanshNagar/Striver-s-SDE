@@ -3,7 +3,8 @@ class Queue {
     private int start, end, currSize, maxSize;
 
     public Queue() {
-        arr = new int[16];
+        maxSize = 16;
+        arr = new int[maxSize];
         start = -1;
         end = -1;
         currSize = 0;
