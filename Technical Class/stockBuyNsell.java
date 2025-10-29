@@ -8,10 +8,10 @@ public class stockBuyNsell {
         int minPrice = prices[0];
         int maxPro = 0;
         for (int i = 0; i < prices.length; i++) {
-            int cost = prices[i] - minPrice;
+            int cost = prices[i] - minPrice; // buy at minPrice,sell at i
             maxPro = Math.max(maxPro, cost);
             minPrice = Math.min(minPrice, prices[i]);
         }
-        return maxPro;
+        return maxPro; //o(n)
     }
 }
