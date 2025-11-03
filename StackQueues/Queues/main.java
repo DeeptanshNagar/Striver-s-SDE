@@ -69,7 +69,6 @@ class Queue {
     }
 }
 
-
 public class main {
     public static void main(String[] args) {
         Queue q = new Queue(6);
