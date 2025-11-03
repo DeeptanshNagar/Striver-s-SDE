@@ -1,4 +1,3 @@
-package StackQueues.Stacks;
 class Stack { // LIFO
     int size = 1000;
     int[] arr = new int[size];
