@@ -9,7 +9,7 @@ public class secondVariety {
     }
     static int[] rearrangeArray(int[] arr) {
         int n = arr.length;
-        ArrayList<Integer> positive = new ArrayList<>();
+        ArrayList<Integer> positive = new ArrayList<>(); 
         ArrayList<Integer> negative = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
