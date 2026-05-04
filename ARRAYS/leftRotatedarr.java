@@ -11,9 +11,11 @@ public class leftRotatedarr {
     static void rotatearr(int[] arr, int n, int k) {
     if (n == 0)
       return;
+
     k = k % n;
     if (k > n)
       return;
+
     int[] temp = new int[k];
     for (int i = 0; i < k; i++) {
       temp[i] = arr[i];
@@ -22,7 +24,7 @@ public class leftRotatedarr {
       arr[i] = arr[i + k];
     }
     for (int i = n - k; i < n; i++) {
-      arr[i] = temp[i - n + k];
+      arr[i] = temp[i - n + k]; 
     }
   }
 

@@ -14,8 +14,8 @@ public class MissingNoBetter {
             hash[nums[i]]++;
         }
 
-        for (int i = 1; i <= N; i++) {
-            if(hash[i]==0) {
+        for (int i = 1; i < hash.length; i++) {
+            if(hash[i] == 0) {
                 return i;
             }
         }
