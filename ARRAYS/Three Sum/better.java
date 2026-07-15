@@ -23,7 +23,7 @@ public class better {
                 int third = -(arr[i] + arr[j]);
                 if(hashset.contains(third)) {
                     List<Integer> temp = Arrays.asList(arr[i], arr[j], third);
-                    temp.sort(null);
+                    Collections.sort(temp);
                     st.add(temp);
                 }
                 hashset.add(arr[j]);
