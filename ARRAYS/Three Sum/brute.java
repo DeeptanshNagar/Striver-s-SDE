@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -26,7 +27,7 @@ public class brute {
                 for (int k = j+1; k < n; k++) {
                     if(arr[i] + arr[j] + arr[k] == 0) {
                         List<Integer> temp = Arrays.asList(arr[i], arr[j], arr[k]);
-                        temp.sort(null);
+                        Collections.sort(temp);
                         st.add(temp);
                     }
                 }
